@@ -9,6 +9,7 @@ app.get('/api', (req, res) => {
   res.send(obj);
 });
 
+app.use(cors());
 
 app.use('/images', express.static('images'));
 
